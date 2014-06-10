@@ -20,7 +20,7 @@ with "host:port".
 
 Short example:
 ```js
-phantomjs_remote('console.log(1); phantom.exit();', function(error, result) {
+phantomjs_remote.send('console.log(1); phantom.exit();', function(error, result) {
 	if (!error)
 		console.log(result);
 }, { 'load-images': 'no'} );
